@@ -1,0 +1,154 @@
+
+@import url(responsive.scss);
+    :root {
+        /* Theme */
+        --primary-color: #1662f3;
+        --light-color: #d0dffc;
+        --dark-color: #283b70;
+        --regular-font: 'Inter', sans-serif;
+    }
+    .channel-section {
+
+    }
+    .channel-name {
+        border-radius: 10px;
+        color: #fff;
+        border: 2px solid #fff;
+        padding: 5px 10px;
+        margin-bottom: 27px;
+    }
+
+    body {
+        background: #292D3E;
+        padding:0px 280px
+    }
+
+
+    .testimonial_sec > p {
+        text-align: center;
+        color: #fff;
+        margin-top: -14px;
+    }
+    
+    .container {
+        margin-top: 80px;
+        position: relative;
+        margin-bottom:100px;
+    }
+
+    .testimonial_sec{
+    width: 100%;
+    padding: 20px 0 0px 0;
+    h1{
+        text-align: center;
+        font: normal 38px/42px 'Luckiest Guy', cursive;
+        color:#fff;
+    }
+    .testimonial_inner{
+        width: 100%;
+        padding-top: 25px;
+        padding:0px 100px 0px 100px; 
+        .slick-list{
+            padding: 0px;
+            .slick-track{
+                .card{
+                    margin-right: 15px;
+                    border-radius: 10px;
+                    .card-body{
+                        .rating > span{
+                            color: #ffc004;
+                        }
+                        .card-title{
+                        font: normal 15px/28px 'Luckiest Guy', cursive; 
+                        padding-top: 5px;
+                        }
+                        .card-text{
+                            font: 500 14px/21px'Urbanist', sans-serif;
+    
+                        }
+                        strong{
+                            text-transform: uppercase;
+                            font-size: 15px;
+                        }
+                        span{
+                            text-transform: uppercase;
+                            color: #cdcdcd;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .slick-dots{
+            bottom: -50px;
+            width:80%;
+            li{
+                margin: 0 0px;
+                color:#fff;
+                button{
+                    &::before{
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+    }
+    .slick-dots li.slick-active button:before {
+        color:#fff;
+    }
+    .all_btn{
+        width: 100%;
+        text-align: center;
+        margin-top: 75px;
+        a{
+            background-color: #fe6805;
+            color: #fff;
+            padding: 10px 32px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 13px;
+            transition: 0.3s ease-in-out;
+            &:hover{
+                background: #fff;
+                color: #fe6805;
+                filter: drop-shadow(0px 0px 2px #555);
+            }
+        }
+    }
+
+}
+
+@media (min-width:1200px) and (max-width:1399px){
+    .testimonial_sec .testimonial_inner .slick-list .slick-track {
+        left: 122px;
+      }
+}
+@media (min-width:992px) and (max-width:1199px){
+    .testimonial_sec .testimonial_inner .slick-list .slick-track .card .card-body .card-title{
+        font-size: 14px;
+    }
+    .testimonial_sec .testimonial_inner .slick-list{
+        margin-left: 100px;
+    }
+}
+@media only screen and (max-width:991px){
+    .testimonial_sec .testimonial_inner .slick-list .slick-track .card .card-body .card-title{
+        font-size: 14px;
+    }
+    .testimonial_sec h1{
+        font-size: 30px;
+        line-height: 34px;
+    }
+    .testimonial_sec .testimonial_inner .slick-list{
+        margin-left: 0px;
+        padding: 0 30px;
+    }
+    .testimonial_sec .testimonial_inner .slick-list .slick-track{
+        left: 90px;
+    }
+}
+@media only screen and (max-width:767px){
+    .testimonial_sec .testimonial_inner .slick-list .slick-track{
+        left: 0;
+    }
+}
